@@ -5,7 +5,41 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(x) {
+if (x < 0){
+  return true;
+}
+else {
+  return false;
+}
+}
+
+function isBetween5and10(y){
+  if (y >= 5 && y <= 10){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+
+function isShortName(name){
+  if (name){
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+function startsWithD(name){
+  if (name.slice(0, 1) === "D"){
+     return true;
+  }
+  else {
+    return false;
+  }
+}
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE

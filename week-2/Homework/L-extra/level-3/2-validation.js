@@ -6,7 +6,33 @@
 
 var excludedNums = [6, 14, 91, 111];
 
-function validate(num) {}
+function validate1(num){
+return typeof num === "number";
+  }
+
+function validate2(num){
+return num % 1 === 0;
+  }
+
+function validate3(num){
+return excludedNums.includes(num) === false;
+  }
+
+
+
+function validate(number){
+// if(validate1(number) === true && validate2(number) === true && validate3(number) === false){
+//   return true;
+// }
+// else{
+//   return false;
+// }
+return (validate1(number) && validate2(number) && validate3(number));
+}
+
+/*
+  DO NOT EDIT BELOW THIS LINE
+  --------------------------- */
 
 console.log(validate(6));
 console.log(validate(10.5));
@@ -23,3 +49,5 @@ console.log(validate("16"));
   true
   false
 */
+
+

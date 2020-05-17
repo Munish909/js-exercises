@@ -11,13 +11,19 @@ function tidyUpString(str) {
 }
 
 function capitalise(str) {
-  // complete this function
+  let tidyString = tidyUpString(str);
+  let lowerCase = tidyString.slice(1);
+  let obj = tidyString[0].toUpperCase(str);
+  let upperCase = obj.concat(lowerCase);
+
+  return upperCase;// complete this function
 }
 
 var mentors = ["/Daniel ", "irina ", " Gordon", "ashleigh "];
-var mentorsTidyAndCapitalised;
+var mentorsTidyAndCapitalised = mentors.map(capitalise);
 
 console.log(mentorsTidyAndCapitalised);
+
 
 /*
   EXPECTED RESULT

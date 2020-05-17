@@ -1,3 +1,5 @@
+//______________________________________________________________________________________/
+
 // Write a function that removes an element from an array
 // The function must:
 // - NOT change the original array
@@ -5,11 +7,14 @@
 // - remove the item at the specified index
 
 function remove(arr, index) {
-  return; // complete this statement
+   let arr1 = arr.slice(0, index);// complete this statement
+   let arr2 = arr.slice(index + 1);
+let arr3 = arr1.concat(arr2);
+return arr3;
 }
 
 /*
-  DO NOT EDIT BELOW THIS LINE
+  DO NOT EDIT BELOW THIS LINEs
   --------------------------- */
 var numbers = [1, 2, 3];
 var names = ["Irina", "Ashleigh", "Mozafar"];
@@ -26,3 +31,5 @@ console.log(newNames);
   [1, 2]
   [Irina, Mozafar]
 */
+
+//_____________________________________________________________________________________________/

@@ -5,12 +5,18 @@
 */
 
 function first(arr) {
-  return; // complete this statement
+  arr = numbers[0];
+
+  return arr; // complete this statement
 }
 
 function last(arr) {
-  return; // complete this statement
+
+  return arr.pop(); // complete this statement
 }
+
+
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
