@@ -1,5 +1,3 @@
-//______________________________________________________________________________________/
-
 // Write a function that removes an element from an array
 // The function must:
 // - NOT change the original array
@@ -31,5 +29,3 @@ console.log(newNames);
   [1, 2]
   [Irina, Mozafar]
 */
-
-//_____________________________________________________________________________________________/
