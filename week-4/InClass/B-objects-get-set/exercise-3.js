@@ -3,6 +3,11 @@
 */
 
 // WRITE CODE BELOW THIS
+let kitten = {
+    name: "Gilbert",
+    age: 5,
+    isMale: true
+}
 
 // WRITE CODE ABOVE THIS
 

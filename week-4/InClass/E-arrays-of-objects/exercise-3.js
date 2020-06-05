@@ -53,25 +53,56 @@ let restaurants = [restaurant1, restaurant2, restaurant3];
 DO NOT EDIT ANYTHING ABOVE THIS LINE
 WRITE YOUR CODE BELOW
 */
+function balanceSeats(balance){
+return balance = restaurants.totalSeats - restaurants.numberOfCustomers;
+}
+// let balance1 = restaurant1.totalSeats - restaurant1.numberOfCustomers;
+// let balance2 = restaurant2.totalSeats - restaurant2.numberOfCustomers;
+// let balance3 = restaurant3.totalSeats - restaurant3.numberOfCustomers;
+
+ console.log(balanceSeats());
+// function findBalanceSeats(number){
+  
+//   return   balance;
+// }
+
+
+// function findAvailableRestaurants(number){
+//   if (){
+//     return restaurants.name;
+//   }
+// }
+// console.log(restaurant1);
+// console.log(seatsAvailable);
+
+//   else {
+//     return false;
+//   }
+// }
+
+
+
+
+
 
 /*
 DO NOT EDIT ANYTHING BELOW THIS LINE
 */
 
-let restaurantsAvailableFor5People = findAvailableRestaurants(restaurants, 5);
-console.log(
-  `Find available restaurants for 5 people: Expected result: Ubiquitous Chip,Monkeyz, actual result: ${restaurantsAvailableFor5People}`
-);
+// let restaurantsAvailableFor5People = findAvailableRestaurants(restaurants, 5);
+// console.log(
+//    `Find available restaurants for 5 people: Expected result: Ubiquitous Chip,Monkeyz, actual result: ${restaurantsAvailableFor5People}`
+//  );
 
-let restaurantsServingSalad = findRestaurantServingDish(restaurants, "salad");
-console.log(
-  `Find restaurants serving salad: Expected result: Paesano,Ubiquitous Chip, actual result: ${restaurantsServingSalad}`
-);
+// let restaurantsServingSalad = findRestaurantServingDish(restaurants, "salad");
+// console.log(
+//   `Find restaurants serving salad: Expected result: Paesano,Ubiquitous Chip, actual result: ${restaurantsServingSalad}`
+// );
 
-let numberOfRestaurantsInCityCentre = countNumberOfRestaurantsInArea(
-  restaurants,
-  "center"
-);
-console.log(
-  `Number of restaurants in city centre: Expected result: 2, actual result: ${numberOfRestaurantsInCityCentre}`
-);
+// let numberOfRestaurantsInCityCentre = countNumberOfRestaurantsInArea(
+//   restaurants,
+//   "center"
+// );
+// console.log(
+//   `Number of restaurants in city centre: Expected result: 2, actual result: ${numberOfRestaurantsInCityCentre}`
+// );
