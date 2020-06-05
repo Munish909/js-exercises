@@ -17,19 +17,26 @@ console.log("Favorite food is " + myFavFood.name);
 // and returns the address of where to buy it
 
 function getTakeAwayAddress(food) {
-  // write code here
-}
+  return food.takeAway.name + " " + food.takeAway.address
+  }
 
-console.log("I can buy my favorite food from " + getTakeAwayAddress(myFavFood));
+  console.log("I can buy my favorite food from " + getTakeAwayAddress(myFavFood));
+
 
 // 3. Declare a function "isVeggie" that accepts "food" as a parameter
 // and returns true if it's vegetarian, or false if not
 
 function isVeggie(food) {
   // write code here
+  if (food.isVeggie === true){
+    return true;
+  }
+  else{
+    return false;
+  }
 }
+console.log("Is my favorite vegetarian? " + isVeggie(myFavFood));
 
-console.log("Is my favorite vegetarian? " + isVeggie(food));
 
 // 3. Declare a function "isLowCalorie" that accepts "food" as a parameter
 // and returns true if it has less than 600 calories, or false otherwise
@@ -43,6 +50,12 @@ console.log("Is my favorite vegetarian? " + isVeggie(food));
 
 function isSafeForNutAllergies(food) {
   //write code here
+  if(food.ingredients.includes("sesame seeds")){
+    return false;
+  }
+  else {
+    return true;
+  }
 }
 
 console.log(
