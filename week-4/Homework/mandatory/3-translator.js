@@ -31,14 +31,14 @@ or in the event of an invalid input.
   //write your code here
 
  function greet(language) {
-if(languages.forEach(language) === true){
+if(languages[language]){
 return languages[language];
  }
  else return languages.english;
 
 }
 
-console.log(greet("swedish"));
+console.log(greet("irish"));
 
 /*
 Test your function works correctly calling it inside a console.log(), for each one of these cases:
