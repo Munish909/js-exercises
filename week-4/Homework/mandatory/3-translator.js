@@ -31,14 +31,15 @@ or in the event of an invalid input.
   //write your code here
 
  function greet(language) {
-if(languages[language]){
-return languages[language];
+  let  lan = language.toLowerCase();
+if(languages[lan]){
+return languages[lan];
  }
  else return languages.english;
 
 }
 
-console.log(greet("irish"));
+console.log(greet("sam"));
 
 /*
 Test your function works correctly calling it inside a console.log(), for each one of these cases:
