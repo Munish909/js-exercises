@@ -15,6 +15,10 @@ Write JavaScript below that logs:
     --> should log a list of nodes with a length of 3
 
 */
+// console.log(document.querySelectorAll("p"));
+// console.log(document.querySelector(".site-header"));
+// console.log(document.querySelector("#jumbotron-text"));
+// console.log(document.querySelectorAll(".primary-content p"));
 
 
 /*
@@ -22,8 +26,15 @@ Task 2
 ======
 
 When a user clicks the 'ALERT' button, an alert box should pop up with the text "Thanks for visiting Bikes for Refugees!"
-*/
 
+*/
+let alertButton = document.querySelector("#alertBtn");
+alertButton.addEventListener("click", thankyou);
+
+function thankyou(){
+    alert("Thanks for visiting Bikes for Refugees");
+    alertButton.style.backgroundColor = "pink";
+}
 
 /*
 Task 3
@@ -31,7 +42,10 @@ Task 3
 
 Write JavaScript below that changes the background colour of the page when the 'Change colour' button is clicked.
 */
-
+function backgroundColor(){
+    
+   
+}
 
 /*
 Task 4
@@ -48,3 +62,10 @@ Task 5
 
 When the 'Larger links!' button is clicked, the text of all links on the page should increase.
 */
+
+let lLButton = document.querySelector("#largerLinksBtn");
+lLButton.addEventListener("click", increaseFontSize);
+
+function increaseFontSize(){
+    lLButton.style.fontsize = "80px";
+}

@@ -26,9 +26,19 @@ It should default to English if the language is not in your object of languages,
 or in the event of an invalid input.
 */
 
-function greet(language) {
+
+
   //write your code here
+
+ function greet(language) {
+if(languages.forEach(language) === true){
+return languages[language];
+ }
+ else return languages.english;
+
 }
+
+console.log(greet("swedish"));
 
 /*
 Test your function works correctly calling it inside a console.log(), for each one of these cases:
