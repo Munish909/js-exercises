@@ -4,6 +4,7 @@ Task 1
 Write JavaScript below that logs:
     1. all the "p" element nodes of the document,
     --> should log a list of nodes with a length of 6
+    
 
     2. the first div element node
     --> should log the ".site-header" node
@@ -15,6 +16,11 @@ Write JavaScript below that logs:
     --> should log a list of nodes with a length of 3
 
 */
+console.log(document.querySelectorAll("p"));
+console.log(document.querySelector(".site-header"));
+console.log(document.querySelector("#jumbotron-text"));
+console.log(document.querySelectorAll(".primary-content p"));
+
 
 /*
 Task 2
@@ -22,6 +28,12 @@ Task 2
 
 When a user clicks the 'ALERT' button, an alert box should pop up with the text "Thanks for visiting Bikes for Refugees!"
 */
+let alertButton = document.querySelector("#alertBtn");
+alertButton.addEventListener("click", message);
+
+function message(){
+    alert("Thanks for visiting Bikes for Refugees!");
+}
 
 /*
 Task 3
@@ -29,13 +41,28 @@ Task 3
 
 Write JavaScript below that changes the background colour of the page when the 'Change colour' button is clicked.
 */
+let colorButton = document.querySelector("#bgrChangeBtn");
+colorButton.addEventListener("click", changeColor);
 
+function changeColor(){
+    document.body.style.backgroundColor = "aqua";
+}
 /*
 Task 4
 ======
 
 When a user clicks the 'Add some text' button, a new paragraph should be added below the buttons that says "Read more below."
 */
+let addTextButton = document.querySelector("#addTextBtn");
+addTextButton.addEventListener("click", newParagraph);
+
+function newParagraph(){
+    let changePara = document.createElement("p");
+    changePara.innerText = "Read more below.";
+     let addParagraph = document.querySelector(".primary-content");
+     addParagraph.appendChild(p);
+    
+}
 
 /*
 Task 5
@@ -43,7 +70,13 @@ Task 5
 
 When the 'Larger links!' button is clicked, the text of all links on the page should increase.
 */
+let lLinksButton = document.querySelector("#largerLinksBtn");
+lLinksButton.addEventListener("click", largerLinks);
 
+function largerLinks(){
+    document.body.article-title.style.backgroundColor = "red";
+    
+    }
 /*
 Task 6
 ======
