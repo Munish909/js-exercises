@@ -53,15 +53,18 @@ Task 4
 
 When a user clicks the 'Add some text' button, a new paragraph should be added below the buttons that says "Read more below."
 */
-let addTextButton = document.querySelector("#addTextBtn");
-addTextButton.addEventListener("click", newParagraph);
+// let addTextButton = document.querySelector("#addTextBtn");
+// addTextButton.addEventListener("click", newParagraph);
+
+let addText = document.querySelector("#addTextBtn");
+addText.addEventListener("click", newParagraph);
 
 function newParagraph(){
     let changePara = document.createElement("p");
     changePara.innerText = "Read more below.";
-     let addParagraph = document.querySelector(".primary-content");
-     addParagraph.appendChild(p);
-    
+    let addParagraph = document.querySelector(".buttons");
+    addParagraph.appendChild(changePara);
+    console.log(addParagraph);
 }
 
 /*
@@ -74,9 +77,14 @@ let lLinksButton = document.querySelector("#largerLinksBtn");
 lLinksButton.addEventListener("click", largerLinks);
 
 function largerLinks(){
-    document.body.article-title.style.backgroundColor = "red";
-    
-    }
+    let links = document.querySelectorAll("a");
+    links.forEach(enlarge);
+   
+}
+   function enlarge(link){
+     link.style.fontSize = "25px";
+     
+   }
 /*
 Task 6
 ======
@@ -84,3 +92,18 @@ Task 6
 Using JavaScript, create an unordered list under the "Add" button.
 When the "Add" button is pressed, get the value of the text box on its left, and add it to the list you created above.
 */
+let addItem = document.querySelector("#addArticleBtn");
+let newItem  = document.querySelector(".addArticle");
+let unorderedList = document.createElement("ul");
+let outputDiv = document.querySelector("#newInput");
+outputDiv.appendChild(unorderedList);
+
+addItem.addEventListener("click", addNewToList);
+     
+function addNewToList(event){
+     let itemList = document.createElement("li");
+     itemList.innerText = newItem.value;
+     unorderedList.appendChild(itemList);
+     newItem.value = "";
+   }
+
