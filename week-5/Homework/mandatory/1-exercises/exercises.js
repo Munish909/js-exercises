@@ -15,7 +15,18 @@
  */
 function exerciseOne(arrayOfPeople) {
   let content = document.querySelector("#content");
+  arrayOfPeople.forEach(person => {
+    let name = document.createElement("h1");
+        name.innerText = person.name;
+       content.appendChild(name); 
+    let job = document.createElement("h2");
+    job.innerText = person.job;
+      content.appendChild(job);
+
+  })
 }
+
+
 
 /**
  *
@@ -26,6 +37,15 @@ function exerciseOne(arrayOfPeople) {
  */
 function exerciseTwo(shoppingItems) {
   //Write your code in here
+  let content = document.querySelector("#content");
+  let ul = document.createElement("ul");
+  
+  shoppingItems.forEach(item =>{
+  let li =document.createElement("li");
+  li.innerText = item;
+  ul.appendChild(li);
+  })
+  content.appendChild(ul);
 }
 
 /**
@@ -60,9 +80,21 @@ function exerciseTwo(shoppingItems) {
 
     The end result should look something like this: https://hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 **/
+ 
 function exerciseThree(books) {
   //Write your code in here
+  let content = document.querySelector("#content");
+  books.forEach(person => {
+    let title = document.createElement("p");
+        title.innerText = person.title;
+       content.appendChild(title); 
+    let author = document.createElement("p");
+    author.innerText = person.author;
+      content.appendChild(author);
+
+  })
 }
+
 
 //
 //

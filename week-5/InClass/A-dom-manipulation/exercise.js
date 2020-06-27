@@ -92,18 +92,18 @@ Task 6
 Using JavaScript, create an unordered list under the "Add" button.
 When the "Add" button is pressed, get the value of the text box on its left, and add it to the list you created above.
 */
-let addItem = document.querySelector("#addArticleBtn");
-let newItem  = document.querySelector(".addArticle");
+let addItemButton = document.querySelector("#addArticleBtn");
+let inputPlaceholder = document.querySelector(".addArticle");
 let unorderedList = document.createElement("ul");
-let outputDiv = document.querySelector("#newInput");
-outputDiv.appendChild(unorderedList);
+let outputListDiv = document.querySelector("#newInput");
+outputListDiv.appendChild(unorderedList);
 
-addItem.addEventListener("click", addNewToList);
+addItemButton.addEventListener("click", addNewToList);
      
-function addNewToList(event){
+function addNewToList(){
      let itemList = document.createElement("li");
-     itemList.innerText = newItem.value;
+     itemList.innerText = inputPlaceholder.value;
      unorderedList.appendChild(itemList);
-     newItem.value = "";
+     inputPlaceholder.value = "";
    }
 
