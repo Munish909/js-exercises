@@ -12,6 +12,6 @@ console.log(myName);
 
 let myAge = 44;
 
-myAge = myAge.toUpperCase();
+//myAge = myAge.toUpperCase();
 
 console.log(myAge);
