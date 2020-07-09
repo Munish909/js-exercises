@@ -84,15 +84,33 @@ function exerciseTwo(shoppingItems) {
 function exerciseThree(books) {
   //Write your code in here
   let content = document.querySelector("#content");
-  books.forEach(person => {
-    let title = document.createElement("p");
-        title.innerText = person.title;
-       content.appendChild(title); 
-    let author = document.createElement("p");
-    author.innerText = person.author;
-      content.appendChild(author);
+  
+  books.forEach(book => {
 
+    let title = document.createElement("p");
+      title.innerText = book.title;
+      content.appendChild(title); 
+
+    let author = document.createElement("p");
+    author.innerText = book.author;
+    content.appendChild(author);
+
+    let ul = document.createElement("ul");
+  
+  
+    let li =document.createElement("li");
+    li.innerText = book;
+    ul.appendChild(li);
   })
+  
+}
+
+
+function book(shoppingItems) {
+  //Write your code in here
+  let content = document.querySelector("title");
+  
+  content.appendChild(ul);
 }
 
 
