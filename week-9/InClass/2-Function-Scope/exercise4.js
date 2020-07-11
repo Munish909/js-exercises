@@ -4,8 +4,11 @@ let x = 10;
 
 function f1() {
   console.log(x);
-  let y = 20;
+  return "hello";
 }
 
+
 console.log(f1());
-console.log(y);
+
+let y = 20;
+  console.log(y);
